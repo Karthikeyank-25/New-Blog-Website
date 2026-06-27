@@ -28,7 +28,7 @@ This will install the packages from the requirements.txt for this project.
 '''
 
 # REQUIRED VARIABLES :
-DATABASE_URL = os.environ.get("DATABASE_URL")
+DATABASE_URL = os.environ.get("DATABASE_URL","mysql+pymysql://root:Karthi%402004@localhost/blogdb")
 MY_EMAIL = os.environ.get("EMAIL")
 MY_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
