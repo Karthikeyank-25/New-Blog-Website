@@ -306,6 +306,10 @@ def contact():
         current_user=current_user
     )
 
+@app.route('/ads.txt')
+def google_adsense_txt():
+    return app.send_static_file('ads.txt')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
